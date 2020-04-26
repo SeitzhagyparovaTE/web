@@ -1,0 +1,51 @@
+<html>
+
+<body>
+  <div class="all">
+
+    <div class="betweenCon">
+    </div>
+    <div class="mainDetail">
+      <div class="picTitle">
+        <div class="pictureImg">
+          <img src="{{product.image}}" class="detailImg">
+        </div>
+        <div class="nameTitle">
+          <div class="info">
+            <div class="info1">
+              <h1 class="ntitle">{{product.name}}</h1>
+            </div>
+            <div class="info2">
+              <h2>{{product.price}} tg</h2>
+            </div>
+            <div>
+              <div>
+                <h2 class="descrip">Details</h2>
+              </div>
+              <div>
+                <p> {{product.description}}</p>
+              </div>
+            </div>
+          </div>
+          <button (click)="addToCard(product)">ADD TO CARD</button>
+        </div>
+      </div>
+
+    </div>
+    <div class="lineBetween"></div>
+    <div class="backButtons">
+      <div class="backButtonsDiv">
+        <div>
+          <button class="butBack" (click)="goBack()">Back</button>
+        </div>
+      </div>
+    </div>
+    <div class="betweenCon1">
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

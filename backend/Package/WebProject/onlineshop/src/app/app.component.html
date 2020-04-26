@@ -1,0 +1,35 @@
+<div *ngIf="!logged">
+  <app-header></app-header>
+  <div>
+    <div class="betweenCon">
+    </div>
+    <div class="login-box">
+      <h1>Login</h1>
+      <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" login="" [(ngModel)]="username" placeholder="Login">
+      </div>
+      <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" id="password" [(ngModel)]="password">
+      </div>
+      <div>
+        <input class="btn" type="submit" value="SIGN IN" (click)="login()">
+      </div>
+    </div>
+    <div class="betweenCon1">
+
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
+
+<div *ngIf="logged">
+  <app-header></app-header>
+  
+    <router-outlet></router-outlet>
+    <div>
+      <input class="btn" type="submit" value="SIGN OUT" (click)="logout()">
+    </div>
+  <app-footer></app-footer>
+</div>
