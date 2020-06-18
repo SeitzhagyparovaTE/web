@@ -1,0 +1,13 @@
+<label>Node</label>
+
+
+<table>
+  <tr><td>Name</td><td>Total Capacity</td><td>Edit</td></tr>
+  <tr *ngFor="let node of nodes">
+    <td>{{node.name}}</td>
+    <td>{{node.totalCapacity}}</td>
+    <td><button>Edit</button></td>
+  </tr>
+
+</table>
+
